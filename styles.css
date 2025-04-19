@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #56ccf2, #127af1);
+  color: rgb(0, 0, 0);
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #fafafa;
+}
+
+.welcome {
+  margin-top: 120px;
+  transform: translate(-10px);
+  font-size: 20px;
+}
+
+.welcome h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  font-size: 80px;
+}
+
+.welcome p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  max-width: 600px;
+}
+
+.buttons .btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #2193b0;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons .btn:hover {
+  background-color: #f3f0f0;
+  color: #000;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: white;
+  color: #2193b0;
+}
