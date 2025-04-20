@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - BMI Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .contact-container {
+        background-color: #ffffff;
+        padding: 90px;
+        border-radius: 30px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .contact-container h1 {
+        color: #050505;
+        font-size: 50px;
+        margin-bottom: 25px;
+        text-align: center;
+        margin-top: 2px;
+      }
+
+      .contact-container p {
+        color: #374151;
+        margin-bottom: 15px;
+        font-size: 19px;
+      }
+
+      .contact-section {
+        margin-bottom: 20px;
+      }
+
+      .contact-section h2 {
+        font-size: 16px;
+        color: #1f2937;
+        margin-bottom: 5px;
+      }
+
+      .contact-section p {
+        color: #3b82f6;
+        margin: 0;
+        font-weight: bold;
+      }
+      /* Header Styling */
+      .app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Push form content below fixed header */
+      .edit-form {
+        margin-top: 100px; /* adjust based on header height */
+      }
+
+      /* App Name */
+      .app-name {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Navigation Links */
+      .nav-links a {
+        margin: 40px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #0a0a0a;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-name">MyApp</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="aboutus.html">About us</a>
+      </nav>
+    </header>
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>
+        If you have any questions or feedback about the BMI Calculator, feel
+        free to reach out to us using the information below.
+      </p>
+
+      <div class="contact-section">
+        <h2>Email</h2>
+        <p>support@bmicalculator.com</p>
+      </div>
+
+      <div class="contact-section">
+        <h2>Phone</h2>
+        <p>+91 98765 43210</p>
+      </div>
+
+      <div class="contact-section">
+        <h2>Address</h2>
+        <p>123 Wellness Street, Health City, India</p>
+      </div>
+    </div>
+  </body>
+</html>

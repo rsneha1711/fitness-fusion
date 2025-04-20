@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BMI Fitness Tracker</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 150px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-top: 20px;
+      }
+
+      .highlight {
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .team-section {
+        margin-top: 40px;
+      }
+
+      .team-member {
+        margin-top: 15px;
+      }
+
+      .help-section {
+        margin-top: 50px;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .feature-box {
+        background-color: #f0f8ff;
+        padding: 20px;
+        border-left: 5px solid #007bff;
+        border-radius: 6px;
+        transition: transform 0.2s ease;
+      }
+
+      .feature-box:hover {
+        transform: translateY(-5px);
+      }
+
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 14px;
+        color: #777;
+      }
+      /* Header Styling */
+      .app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Push form content below fixed header */
+      .edit-form {
+        margin-top: 100px; /* adjust based on header height */
+      }
+
+      /* App Name */
+      .app-name {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Navigation Links */
+      .nav-links a {
+        margin: 40px;
+        color: rgb(200, 240, 244);
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #0b0c0c;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-name">FITNESS FUSION</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>About Us</h1>
+
+      <p>
+        Welcome to <span class="highlight">BMI Fitness Tracker</span> – your
+        smart companion on the journey to a healthier you!
+      </p>
+
+      <p>
+        We help users calculate their
+        <span class="highlight">Body Mass Index (BMI)</span> and offer guidance
+        for achieving personal fitness goals. Whether your goal is to lose
+        weight, build muscle, or just stay in shape, we're here to support your
+        journey every step of the way.
+      </p>
+
+      <div class="help-section">
+        <h2>How We Help You</h2>
+        <div class="features-grid">
+          <div class="feature-box">
+            <strong>✅ BMI Calculator:</strong>
+            Instantly calculate your BMI using height and weight to understand
+            your health category.
+          </div>
+          <div class="feature-box">
+            <strong>📈 Progress Tracking:</strong>
+            Keep track of your BMI history and monitor improvements over time.
+          </div>
+          <div class="feature-box">
+            <strong>🎯 Goal Setting:</strong>
+            Set fitness goals and get reminders to stay motivated and on track.
+          </div>
+          <div class="feature-box">
+            <strong>🍎 Health Tips:</strong>
+            Get personalized diet and workout tips based on your BMI range.
+          </div>
+          <div class="feature-box">
+            <strong>🛠 Troubleshooting Help:</strong>
+            Facing an issue? Head over to our
+            <a href="contact.html">Contact Us</a> page and we’ll assist you.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        &copy; 2025 BMI Fitness Tracker. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>

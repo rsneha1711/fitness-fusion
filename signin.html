@@ -45,9 +45,57 @@
       .form-group {
         margin-bottom: 15px;
       }
+      /* Header Styling */
+      .app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Push form content below fixed header */
+      .edit-form {
+        margin-top: 100px; /* adjust based on header height */
+      }
+
+      /* App Name */
+      .app-name {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Navigation Links */
+      .nav-links a {
+        margin: 40px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #090a0a;
+      }
     </style>
   </head>
   <body>
+    <header class="app-header">
+      <div class="app-name">MyApp</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </header>
+
     <!-- Sign-In Form -->
     <div class="container" id="signin">
       <h2>Sign In</h2>
