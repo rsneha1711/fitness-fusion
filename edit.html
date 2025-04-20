@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .edit-form {
+        background: #fff;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #444;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      .btn-confirm {
+        width: 100%;
+        padding: 12px;
+        background-color: #4f46e5;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn-confirm:hover {
+        background-color: #3b35c0;
+      }
+      /* Header Styling */
+      .app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Push form content below fixed header */
+      .edit-form {
+        margin-top: 100px; /* adjust based on header height */
+      }
+
+      /* App Name */
+      .app-name {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Navigation Links */
+      .nav-links a {
+        margin: 40px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #080808;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="app-header">
+      <div class="app-name">FITNESS FUSION</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Header End -->
+
+    <div class="edit-form">
+      <h2>Edit Your Profile</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter mobile number" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <button type="submit" class="btn-confirm">Confirm</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -113,9 +113,56 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      /* Header Styling */
+      .app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #56ccf2, #127af1);
+        color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Push form content below fixed header */
+      .edit-form {
+        margin-top: 100px; /* adjust based on header height */
+      }
+
+      /* App Name */
+      .app-name {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      /* Navigation Links */
+      .nav-links a {
+        margin: 40px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #070707;
+      }
     </style>
   </head>
   <body>
+    <header class="app-header">
+      <div class="app-name">FITNESS FUSION</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+      </nav>
+    </header>
     <div class="fitness-header">Fitness Fusion</div>
 
     <div class="container">
@@ -129,7 +176,9 @@
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required />
         </div>
-        <button type="submit" class="btn">Login</button>
+        <a href="main.html">
+          <button type="submit" class="btn">Login</button>
+        </a>
       </form>
       <div class="forgot-password">
         <a href="#">Forgot password?</a>
@@ -137,7 +186,7 @@
     </div>
 
     <div class="footer">
-      <p>Don't have an account? <a href="/rrp/signin.html">Sign Up</a></p>
+      <p>Don't have an account? <a href="signin.html">Sign Up</a></p>
     </div>
 
     <!-- Image Gallery Section -->
